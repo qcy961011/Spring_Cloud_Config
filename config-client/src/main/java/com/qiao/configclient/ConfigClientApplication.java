@@ -14,12 +14,12 @@ public class ConfigClientApplication {
         SpringApplication.run(ConfigClientApplication.class, args);
     }
 
-    @Value("${foo}")
-    String foo;
+    @Value("${hello}")
+    String hello;
 
     @RequestMapping(value = "/hi")
     public String hi(){
-        return foo;
+        return hello;
     }
 
 }
