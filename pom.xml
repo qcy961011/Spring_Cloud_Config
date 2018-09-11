@@ -12,6 +12,7 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>eureka-server</module>
+        <module>bus-config-client</module>
     </modules>
 
     <parent>
