@@ -8,7 +8,11 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8888/
+    bus:
+      trace:
+        enabled: true
+      enabled: true
+
   rabbitmq:
     host: localhost
     port: 5672
@@ -21,5 +25,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8889/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 
 
